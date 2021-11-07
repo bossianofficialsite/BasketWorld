@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <script src="https://kit.fontawesome.com/60b0971689.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Poppins" rel="stylesheet">
+</head>
+<body>
+    <nav id="nav">
+        <label id="BasketWorld">BasketWorld</label>
+        <img id="ball" src="home-images/ball2.png">
+        <img id="ball2" src="home-images/ball.png">
+        <ul>
+            <li id="list" class="actives">
+                <a id="home" href="home.html">
+                    News
+                </a>
+            </li>
+            <li id="list1">
+                <a id="anchor" href="nba.html">
+                    NBA
+                </a>
+            </li>
+            <li id="list2">
+                <a id="anchor1" href="#">
+                    WNBA
+                </a>
+            </li>
+            <li id="list3">
+                <a id="anchor3" href="#">
+                    PBA
+                </a>
+            </li>
+        </ul>
+        <div class="nav-notif">
+            <div><i class="far fa-bell"></i><i class="fas fa-bell"></i></div>
+            <div>
+                <div id="switch">
+                    <div><i class="fa fa-sun" style="color: #000;"></i></div>
+                    <div><i class="far fa-sun" style="color: #fff;"></i></div>
+                </div>
+            </div>
+            <div>
+                <p id="timeout">Time-Out</p>
+            </div>
+        </div>
+    </nav>
+    <div id="modalclose">
+            <div class="gd01">
+                Call another immediate timeout?
+            </div>
+            <div class="gd02"><a href="../index.html">Yeah! Full 60s</a></div>
+            <div id="gd03" class="gd03">Cancel</div>
+    </div>
+    <section id="main-content">
+        <br>
+       <div class="ads" id="ads">
+           <img src="home-images/ads.jpg">
+           <div id="ads-close"></div>
+       </div>
+       <div class="news-content">
+           <div>
+               <img src="home-images/rookies.jpg">
+           </div>
+           <div>
+               <h2>5-on-5: Summer league's biggest surprises, disappointments and best 'veterans'</h2>
+               <p>With the first week of summer league nearly complete, which players have impressed the most? Our experts answer the big questions.</p>
+               <p>2 days ago</p>
+           </div>
+       </div>
+       <div class="news-content">
+            <div>
+               <img src="./home-images/alapag.jpg">
+            </div>
+            <div>
+               <h2>LOOK: Jimmy Alapag(Pba greats) Sacramento Kings Summer League team</h2>
+               <p>LOOK: Jimmy Alapag tries out for Sacramento Kings Summer League team.</p>
+               <p>3 days ago</p>
+            </div>
+        </div>
+        <div class="ads1" id="ads1">
+            <img src="home-images/ads1.jpg">
+            <div id="ads1-close"></div>
+        </div>
+        <div class="news-content">
+            <div>
+               <img src="home-images/breanna-stewart.jpg">
+            </div>
+            <div>
+               <h2>Breanna Stewart named MVP as Seattle Storm beat Connecticut Sun in WNBA's inaugural Commissioner's Cup</h2>
+               <p>Just five days after winning gold at the Tokyo Olympics, Storm star Breanna Stewart added two more trophies to her impressive collection, leading Seattle to...</p>
+               <p>1 days ago</p>
+            </div>
+        </div>
+        <div class="news-content">
+            <div>
+               <img src="home-images/beastbrook.jpg">
+            </div>
+            <div>
+               <h2>Lakers News: Russell Westbrook Doesn’t Feel He Has Anything To Prove</h2>
+               <p>With Russell Westbrook finally in tow, the Los Angeles Lakers have the requisite star power to go up against any other team in the NBA.</p>
+               <p>17 hours ago</p>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <h3>Sport</h3>
+                <p>Nba</p>
+                <p>Pba</p>
+                <p>Wnba</p>
+            </div>
+            <div>
+                <h3>Others</h3>
+                <p>College Basketball</p>
+                <p>NCAA</p>
+                <p>UAAP</p>
+                <p>NAIA</p>
+                <p>USCAA</p>
+                <p>NCCAA</p>
+            </div>
+            <div>
+                <h3>Reference</h3>
+                <p>ESPN Ph</p>
+                <p>ESPN Plus</p>
+                <p>Sport Center</p>
+                <p>Basketball Fanatics</p>
+            </div>
+            <div>
+                <h3>Tools</h3>
+                <p>Contact Us</p>
+                <p>Corrections</p>
+                <p>Publish News</p>
+            </div>
+        </div>
+        <br>
+        <div class="copy">Copyright © 2021 by Ian Loveña</div>
+    </section>
+    <script src="main.js"></script>
+    <script>
+        /** Home **/
+        var adsclose = document.getElementById('ads-close');
+        var ads = document.getElementById('ads');
+        var adsclose1 = document.getElementById('ads1-close');
+        var ads1 = document.getElementById('ads1');
+
+        adsclose.onclick = function() {
+            ads.style.display = "none";
+        }
+        adsclose1.onclick = function() {
+            ads1.style.display = "none";
+        }
+    </script>
+</body>
+</html>

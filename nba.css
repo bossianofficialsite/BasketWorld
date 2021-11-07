@@ -1,0 +1,379 @@
+/** Nba Content**/
+.nba-select {
+    width: 80%;
+    margin: auto;
+    top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nba-select::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.nba-select > div {
+    width: 32.3%;
+    background: #fff;
+    margin: .5em .3em;
+    border-radius: 5px;
+    
+}
+.nba-select div > label {
+    display: block;
+    font-weight: bold;
+    background: rgb(199, 73, 58);
+    padding: .1em .5em;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: .8rem;
+    text-shadow: -1px 0 rgb(0,0,0), 0 1px rgb(0,0,0), 1px 0 rgb(0,0,0), 0 -1px rgb(0,0,0);
+}
+.nba-select > div > div {
+    width: 100%;
+    height: 50px;
+}
+[class="nba-logo"] {
+    width: 13%;
+    height: 100%;
+    margin-left: 1em;
+    position: absolute;
+
+}
+.nba-select > div > div:nth-child(odd) {
+    background: rgb(233, 233, 233);
+}
+[class="nba-logo"] > img {
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nba-select div > a {
+    color: #000;
+    position: absolute;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    line-height: 50px;
+    padding-left: 5.5em;
+}
+.nba-select div > a:hover {
+    color: blue;
+    text-decoration: 1px solid underline;
+}
+@keyframes moves {
+    0% { transform: translate(0) rotate(0); }
+    33% { transform: translate(0) rotate(5deg); }
+    66% { transform: translate(0) rotate(-5deg); }
+    100% { transform: translate(0) rotate(0); }
+}
+#anchor {
+    color: rgb(199, 73, 58);
+    animation-name: moves;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+#anchor.active {
+    color: rgb(199, 73, 58);
+}
+[id*="roster1"] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,.8);
+    backdrop-filter: blur(5px);
+    display: none;
+    z-index: 100;
+}
+[id*="roster-close"] {
+    font-size: 3rem;
+    position: absolute;
+    right: 3%;
+    cursor: pointer;
+}
+[id*="roster-close"]:hover {
+    color: rgb(199, 73, 58);
+}
+@keyframes zoom {
+    0% {
+        transform: scale(.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+#roster-content {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    overflow-y: scroll;
+    margin: 4em auto;
+    animation-name: zoom;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+}
+#roster-content div:first-child {
+    width: 25%;
+    background: #fff;
+}
+#roster-content div:last-child {
+    width: 75%;
+}
+#roster-content div:first-child .nba-team {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    color: #fff;
+    text-shadow: -1px 0px rgba(0,0,0,.5), 0 1px rgba(0,0,0,.5), 1px 0 rgba(0,0,0,.5), 0 -1px rgba(0,0,0,.5);
+}
+#boston-roster1 #roster-content div:first-child .nba-team {
+    background: green;
+}
+#newyork-roster1 #roster-content div:first-child .nba-team {
+    background: orangered;
+}
+#nets-roster1 #roster-content div:first-child .nba-team {
+    background: #000;
+}
+#raptors-roster1 #roster-content div:first-child .nba-team {
+    background: rgb(184, 5, 5);
+}
+#sixers-roster1 #roster-content div:first-child .nba-team {
+    background: rgb(74, 129, 248);
+}
+#warriors-roster1 #roster-content div:first-child .nba-team {
+    background: rgb(22, 96, 255);
+}
+#lakers-roster1 #roster-content div:first-child .nba-team {
+    background: gold;
+}
+#clippers-roster1 #roster-content div:first-child .nba-team {
+    background: rgb(22, 96, 255);
+}
+#suns-roster1 #roster-content div:first-child .nba-team {
+    background: rgb(255, 154, 22);
+}
+#kings-roster1 #roster-content div:first-child .nba-team {
+    background: rgb(90, 45, 129);
+}
+#bucks-roster1 #roster-content div:first-child .nba-team {
+    background: darkgreen;
+}
+#bulls-roster1 #roster-content div:first-child .nba-team {
+    background: rgb(243, 14, 26);
+}
+#cavs-roster1 #roster-content div:first-child .nba-team {
+    background: maroon;
+}
+#pacers-roster1 #roster-content div:first-child .nba-team {
+    background: rgb(251, 194, 39)
+}
+#piston-roster1 #roster-content div:first-child .nba-team {
+    background: rgb(230, 33, 75);
+}
+#roster-content div:first-child .nba-team ~ div {
+    width: 100%;
+    height: 8%;
+    text-align: center;
+    line-height: 35px;
+    background: #fff;
+}
+#roster-content div:first-child .nba-team ~ div:nth-child(even) {
+    background: #d9d9d9;
+}
+#roster-content div:last-child > div {
+    width: 100%;
+    height: 8%;
+    display: flex;
+} 
+#roster-content div:last-child > div:first-child {
+    height: 10.6%;
+    text-decoration: underline solid #000;
+}
+#roster-content div:last-child > div:first-child > div {
+    line-height: 50px;
+    font-weight: bold;
+}
+#roster-content div:last-child > div > div { 
+    width: 16.66%;
+    text-align: center;
+    line-height: 35px;
+    font-size: .8rem;
+    background: #fff;
+}
+
+
+
+
+
+
+
+/** nba active class **/
+#list1.active {
+    color: #000;
+    background: #ddd;
+}
+#list1::after {
+    content: "";
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent rgb(60,60,60) transparent;
+}
+#list1.active::after {
+    border-color: transparent transparent #d9d9d9 transparent;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .nba-select {
+        width: 90%;
+    }
+    .nba-select > div {
+        width: 100%;
+    }
+    .nba-select div > label {
+        font-size: 1rem;
+        text-align: center;
+        padding: .5em;
+    }
+    [class="nba-logo"] > img {
+        width: 55px;
+    }
+    .nba-select div > a {
+        padding-left: 8em;
+    }
+    [id*="roster1"] {
+        height: 100vh;
+        position: fixed;
+        top: 0%;
+    }
+    #roster-content {
+        width: 95%;
+    }
+    #roster-content div:first-child {
+        width: 20%;
+    }
+    #roster-content div:last-child {
+        width: 80%;
+    }
+    #roster-content div:first-child .nba-team {
+        font-size: .6rem;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: normal;
+    }
+    #roster-content div:first-child .nba-team ~ div {
+        font-size: .6rem;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #roster-content div:last-child > div:first-child {
+        height: 40px;
+    }
+    #roster-content div:last-child > div:first-child > div {
+        line-height: 40px;
+    }
+    #roster-content div:last-child > div > div {
+        font-size: .6rem;
+        line-height: 45px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .nba-select {
+        width: 90%;
+    }
+    .nba-select > div {
+        width: 48%;
+    }
+    [class="nba-logo"] > img {
+        width: 55px;
+    }
+    [id*="roster1"] {
+        height: 100vh;
+        position: fixed;
+        top: 0%;
+    }
+    #roster-content {
+        width: 95%;
+    }
+    #roster-content div:first-child {
+        width: 20%;
+    }
+    #roster-content div:last-child {
+        width: 80%;
+    }
+    #roster-content div:first-child .nba-team {
+        font-size: 1rem;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        height: 55px;
+    }
+    #roster-content div:first-child .nba-team ~ div {
+        font-size: .8rem;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #roster-content div:last-child > div:first-child {
+        height: 55px;
+    }
+    #roster-content div:last-child > div:first-child > div {
+        line-height: 40px;
+    }
+    #roster-content div:last-child > div > div {
+        font-size: .8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .nba-select div > a {
+        padding-left: 6.5em;
+    }
+    [id*="roster1"] {
+        height: 90vh;
+        position: absolute;
+    }
+    #roster-content div:first-child .nba-team {
+        font-size: 1.2rem;
+    }
+   
+}
+@media only screen and (min-width: 992px) {
+    .nba-select > div {
+        width: 32%;
+    }
+    
+}
+@media only screen and (min-width: 1200px) {
+    
+}
+
+
+
+
+
+
+
+
+
+

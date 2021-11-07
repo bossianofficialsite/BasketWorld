@@ -1,0 +1,2593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nba</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="nba.css">
+    <script src="https://kit.fontawesome.com/60b0971689.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Poppins" rel="stylesheet">
+</head>
+<body>
+    <nav id="nav">
+        <label id="BasketWorld">BasketWorld</label>
+        <img id="ball" src="home-images/ball2.png">
+        <img id="ball2" src="home-images/ball.png">
+        <ul>
+            <li id="list">
+                <a id="home" href="home.html">
+                    NEWS
+                </a>
+            </li>
+            <li id="list1" class="actives">
+                <a id="anchor" href="#">
+                    NBA
+                </a>
+            </li>
+            <li id="list2">
+                <a id="anchor1" href="#">
+                    WNBA
+                </a>
+            </li>
+            <li id="list3">
+                <a id="anchor3" href="#">
+                    PBA
+                </a>
+            </li>
+        </ul>
+        <div class="nav-notif">
+            <div><i class="far fa-bell"></i><i class="fas fa-bell"></i></div>
+            <div>
+                <div id="switch">
+                    <div><i class="fa fa-sun" style="color: #000;"></i></div>
+                    <div><i class="far fa-sun" style="color: #fff;"></i></div>
+                </div>
+            </div>
+            <div>
+                <p id="timeout">Time-Out</p>
+            </div>
+        </div>
+    </nav>
+    <div id="modalclose">
+            <div class="gd01">
+                Call another immediate timeout?
+            </div>
+            <div class="gd02"><a href="../index.html">Yeah! Full 60s</a></div>
+            <div id="gd03" class="gd03">Cancel</div>
+    </div>
+    <section id="main-content">
+        <div class="nba-select">
+            <div>
+                <label>Atlantic</label>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/celtics.png">
+                    </div>
+                    <a onclick="boston()" href="#">Boston Celtics</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/knicks.png">
+                    </div>
+                    <a onclick="newyork()" href="#">New York Knicks</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/nets.png">
+                    </div>
+                    <a onclick="nets()" href="#">Brooklyn Nets</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/raptors.png">
+                    </div>
+                    <a onclick="raptors()" href="#">Toronto Raptors</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/sixers.png">
+                    </div>
+                    <a onclick="sixers()" href="#">Philadelphia Sixers</a>
+                </div>
+            </div>
+            <div>
+                <label>Pacific</label>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/Gsw.png">
+                    </div>
+                    <a onclick="warriors()" href="#">Golden State Warriors</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/lakers.png">
+                    </div>
+                    <a onclick="lakers()" href="#">Los Angeles Lakers</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/clippers.png">
+                    </div>
+                    <a onclick="clippers()" href="#">Los Angeles Clippers</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/suns.png">
+                    </div>
+                    <a onclick="suns()" href="#">Phoenix Suns</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/kings.png">
+                    </div>
+                    <a onclick="kings()" href="#">Sacramento Kings</a>
+                </div>
+            </div>
+            <div>
+                <label>Central</label>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/bucks.png">
+                    </div>
+                    <a onclick="bucks()" href="#">Milwaukee Bucks</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/bulls.png">
+                    </div>
+                    <a onclick="bulls()" href="#">Chicago Bulls</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/cavaliers.png">
+                    </div>
+                    <a onclick="cavs()" href="#">Cleveland Cavaliers</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/pacers.png">
+                    </div>
+                    <a onclick="pacers()" href="#">Indiana Pacers</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/piston.png">
+                    </div>
+                    <a onclick="piston()" href="#">Detroit Piston</a>
+                </div>
+            </div>
+            <div>
+                <label>Southwest</label>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/dallas.png">
+                    </div>
+                    <a href="#">Dallas Mavericks</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/memphis.png">
+                    </div>
+                    <a href="#">Memphis Grizzlies</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/rockets.png">
+                    </div>
+                    <a href="#">Houston Rockets</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/spurs.png">
+                    </div>
+                    <a href="#">San Antonio Spurs</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/pelicans.png">
+                    </div>
+                    <a href="#">New Orleans Pelicans</a>
+                </div>
+            </div>
+            <div>
+                <label>Southeast</label>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/hawks.png">
+                    </div>
+                    <a href="#">Atlanta Hawks</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/heats.png">
+                    </div>
+                    <a href="#">Miami Heat</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/hornets.png">
+                    </div>
+                    <a href="#">Charlotte Hornets</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/wizards.png">
+                    </div>
+                    <a href="#">Washington Wizards</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/magics.png">
+                    </div>
+                    <a href="#">Orlando Magic</a>
+                </div>
+            </div>
+            <div>
+                <label>Northwest</label>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/blazers.png">
+                    </div>
+                    <a href="#">Portland Trail Blazers</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/jazz.png">
+                    </div>
+                    <a href="#">Utah Jazz</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/nuggets.png">
+                    </div>
+                    <a href="#">Denver Nuggets</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/thunder.png">
+                    </div>
+                    <a href="#">Oklahoma City Thunder</a>
+                </div>
+                <div>
+                    <div class="nba-logo">
+                        <img src="nba-image/wolve.png">
+                    </div>
+                    <a href="#">Minnesota TimberWolve</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="boston-roster1">
+            <div id="boston-roster-close">&times;</div>
+            <div id="roster-content">
+                <div class="nba-name">
+                    <div class="nba-team">Boston Celtics</div>
+                    <div>Jaylen Brown</div>
+                    <div>Bruno Fernando</div>
+                    <div>Al Holford</div>
+                    <div>Enes Kanter</div>
+                    <div>Luke Kornet</div>
+                    <div>Romeo Langford</div>
+                    <div>Jabari Parker</div>
+                    <div>Josh richardson</div>
+                    <div>Dennis Schroder</div>
+                    <div>Marcus Smart</div>
+                    <div>Jayson Tatum</div>
+                    <div>Grant Williams</div>
+                    <div>Robert Williams III</div>
+                </div>
+                <div class="nba-stat">
+                    <div>
+                        <div>POS</div>
+                        <div>AGE</div>
+                        <div>HT</div>
+                        <div>WT</div>
+                        <div>COLLEGE</div>
+                        <div>SALARY</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>24</div>
+                        <div>1.98 m</div>
+                        <div>101 kg</div>
+                        <div>California</div>
+                        <div>$26,758,928</div>
+                    </div>
+                    <div>
+                        <div>F</div>
+                        <div>23</div>
+                        <div>2.06 m</div>
+                        <div>108 kg</div>
+                        <div>Maryland</div>
+                        <div>$1,782,621</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>35</div>
+                        <div>2.06 m</div>
+                        <div>108 kg</div>
+                        <div>Florida</div>
+                        <div>$27,000,000</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>29</div>
+                        <div>2.08 m</div>
+                        <div>113 kg</div>
+                        <div>Kentucky</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>26</div>
+                        <div>2.18 m</div>
+                        <div>113 kg</div>
+                        <div>Vanderbilt</div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>21</div>
+                        <div>1.93 m</div>
+                        <div>97 kg</div>
+                        <div>Indiana</div>
+                        <div>$3,804,360</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>26</div>
+                        <div>2.03 m</div>
+                        <div>111 kg</div>
+                        <div>Duke</div>
+                        <div>$2,283,034</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>27</div>
+                        <div>1.96 m</div>
+                        <div>90 kg</div>
+                        <div>Tennessee</div>
+                        <div>$11,615,328</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>27</div>
+                        <div>1.91 m</div>
+                        <div>78 kg</div>
+                        <div></div>
+                        <div>$5,890,000</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>27</div>
+                        <div>1.91 m</div>
+                        <div>99 kg</div>
+                        <div>Oklahoma State</div>
+                        <div>$14,339,285</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>23</div>
+                        <div>2.03 m</div>
+                        <div>95 kg</div>
+                        <div>Duke</div>
+                        <div>$28,103,500</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>22</div>
+                        <div>1.98 m</div>
+                        <div>107 kg</div>
+                        <div>Tennessee</div>
+                        <div>$2,617,800</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>23</div>
+                        <div>2.03 m</div>
+                        <div>107 kg</div>
+                        <div>Texas A&M</div>
+                        <div>$3,661,976</div>
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="newyork-roster1">
+                <div id="newyork-roster-close">&times;</div>
+                <div id="roster-content">
+                    <div class="nba-name">
+                        <div class="nba-team">New York Knicks</div>
+                        <div>RJ Barrett</div>
+                        <div>Alec Burks</div>
+                        <div>Evan Fournier</div>
+                        <div>Taj Gibson</div>
+                        <div>Kevin Knox II</div>
+                        <div>Nerlens Noel</div>
+                        <div>Frank Ntilikina</div>
+                        <div>Immanuel Quickley</div>
+                        <div>Julius Randle</div>
+                        <div>Mitchell Robinson</div>
+                        <div>Derrick Rose</div>
+                        <div>Obi Toppin</div>
+                        <div>Kemba Walker</div>
+                    </div>
+                    <div class="nba-stat">
+                        <div>
+                            <div>POS</div>
+                            <div>AGE</div>
+                            <div>HT</div>
+                            <div>WT</div>
+                            <div>COLLEGE</div>
+                            <div>SALARY</div>
+                        </div>
+                        <div>
+                            <div>SG</div>
+                            <div>21</div>
+                            <div>1.98 m</div>
+                            <div>97 kg</div>
+                            <div>Duke</div>
+                            <div>$8,623,920</div>
+                        </div>
+                        <div>
+                            <div>SG</div>
+                            <div>30</div>
+                            <div>1.98 m</div>
+                            <div>97 kg</div>
+                            <div>Colorado</div>
+                            <div>$9,536,000</div>
+                        </div>
+                        <div>
+                            <div>G</div>
+                            <div>28</div>
+                            <div>2.01 m</div>
+                            <div>92 kg</div>
+                            <div></div>
+                            <div>$17,000,000</div>
+                        </div>
+                        <div>
+                            <div>C</div>
+                            <div>36</div>
+                            <div>2.06 m</div>
+                            <div>105 kg</div>
+                            <div>USC</div>
+                            <div>$4,910,000</div>
+                        </div>
+                        <div>
+                            <div>SF</div>
+                            <div>22</div>
+                            <div>2.01 m</div>
+                            <div>97 kg</div>
+                            <div>Kentucky</div>
+                            <div>$5,845,979</div>
+                        </div>
+                        <div>
+                            <div>C</div>
+                            <div>27</div>
+                            <div>2.11 m</div>
+                            <div>99 kg</div>
+                            <div>Kentucky</div>
+                            <div>$8,000,000</div>
+                        </div>
+                        <div>
+                            <div>PG</div>
+                            <div>23</div>
+                            <div>1.93 m</div>
+                            <div>90 kg</div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div>SG</div>
+                            <div>22</div>
+                            <div>1.91 m</div>
+                            <div>86 kg</div>
+                            <div>Kentucky</div>
+                            <div>$2,210,640</div>
+                        </div>
+                        <div>
+                            <div>PF</div>
+                            <div>26</div>
+                            <div>2.03 m</div>
+                            <div>113 kg</div>
+                            <div>Kentucky</div>
+                            <div>$21,780,000</div>
+                        </div>
+                        <div>
+                            <div>C</div>
+                            <div>23</div>
+                            <div>2.13 m</div>
+                            <div>108 kg</div>
+                            <div></div>
+                            <div>$1,802,057</div>
+                        </div>
+                        <div>
+                            <div>PG</div>
+                            <div>32</div>
+                            <div>1.88 m</div>
+                            <div>90 kg</div>
+                            <div>Memphis</div>
+                            <div>$13,445,120</div>
+                        </div>
+                        <div>
+                            <div>PF</div>
+                            <div>23</div>
+                            <div>2.06 m</div>
+                            <div>99 kg</div>
+                            <div>Daylon</div>
+                            <div>$5,105,160</div>
+                        </div>
+                        <div>
+                            <div>PG</div>
+                            <div>31</div>
+                            <div>1.83 m</div>
+                            <div>83 kg</div>
+                            <div>Connecticut</div>
+                            <div>$36,016,200</div>
+                        </div>
+                        <div>
+                  
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div id="nets-roster1">
+            <div id="nets-roster-close">&times;</div>
+            <div id="roster-content">
+                <div class="nba-name">
+                    <div class="nba-team">Brooklyn Nets</div>
+                    <div>LaMarcus Aldridge</div>
+                    <div>DeAndre' Bembry</div>
+                    <div>Bruce Brown</div>
+                    <div>Jevon Carter</div>
+                    <div>Nicolas Claxton</div>
+                    <div>Kevin Durant</div>
+                    <div>Blake Griffin</div>
+                    <div>James Harden</div>
+                    <div>Joe Harris</div>
+                    <div>Kyrie Irving</div>
+                    <div>Patty Mills</div>
+                    <div>Paul Millsap</div>
+                    <div>Tyler Johnson</div>
+                </div>
+                <div class="nba-stat">
+                    <div>
+                        <div>POS</div>
+                        <div>AGE</div>
+                        <div>HT</div>
+                        <div>WT</div>
+                        <div>COLLEGE</div>
+                        <div>SALARY</div>
+                    </div>
+                    <div>
+                        <div>F</div>
+                        <div>36</div>
+                        <div>2.11 m</div>
+                        <div>113 kg</div>
+                        <div>Texas</div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>27</div>
+                        <div>1.96 m</div>
+                        <div>95 kg</div>
+                        <div>Saint Joseph's</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>25</div>
+                        <div>1.93 m</div>
+                        <div>91 kg</div>
+                        <div>Miami (FL)</div>
+                        <div>$4,736,102</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>26</div>
+                        <div>1.85 m</div>
+                        <div>90 kg</div>
+                        <div>West Virginia</div>
+                        <div>$3,650,000</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>22</div>
+                        <div>2.11 m</div>
+                        <div>97 kg</div>
+                        <div>Georgia</div>
+                        <div>$1,782,621</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>32</div>
+                        <div>2.08 m</div>
+                        <div>108 kg</div>
+                        <div>Texas</div>
+                        <div>$42,018,900</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>32</div>
+                        <div>2.06 m</div>
+                        <div>113 kg</div>
+                        <div>Oklahoma</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>32</div>
+                        <div>1.96 m</div>
+                        <div>99 kg</div>
+                        <div>Arizona State</div>
+                        <div>$44,310,840</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>30</div>
+                        <div>1.98 m</div>
+                        <div>99 kg</div>
+                        <div>Virginia</div>
+                        <div>$17,357,143</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>29</div>
+                        <div>1.88 m</div>
+                        <div>88 kg</div>
+                        <div>Duke</div>
+                        <div>$35,328,700</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>33</div>
+                        <div>1.85 m</div>
+                        <div>81 kg</div>
+                        <div>Saint Mary's</div>
+                        <div>$5,890,000</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>36</div>
+                        <div>2.01 m</div>
+                        <div>116 kg</div>
+                        <div>Louisiana Tech</div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>29</div>
+                        <div>1.91 m</div>
+                        <div>84 kg</div>
+                        <div>Fresno State</div>
+                        <div></div>
+                    </div>
+                    <div>
+              
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="raptors-roster1">
+            <div id="raptors-roster-close">&times;</div>
+            <div id="roster-content">
+                <div class="nba-name">
+                    <div class="nba-team">Toronto Raptors</div>
+                    <div>Precious Achiuwa</div>
+                    <div>OG Anunoby</div>
+                    <div>Scottie Barnes</div>
+                    <div>Khem Birch</div>
+                    <div>Isaac Bonga</div>
+                    <div>Chris Boucher</div>
+                    <div>Goran Dragic</div>
+                    <div>Malachi Flynn</div>
+                    <div>Pascal Siakam</div>
+                    <div>Gary Trent Jr.</div>
+                    <div>Fred VanVleet</div>
+                    <div>Yuta Watanabe</div>
+                    <div>Svi Mykhailiuk</div>
+                </div>
+                <div class="nba-stat">
+                    <div>
+                        <div>POS</div>
+                        <div>AGE</div>
+                        <div>HT</div>
+                        <div>WT</div>
+                        <div>COLLEGE</div>
+                        <div>SALARY</div>
+                    </div>
+                    <div>
+                        <div>F</div>
+                        <div>21</div>
+                        <div>2.03 m</div>
+                        <div>102 kg</div>
+                        <div>Memphis</div>
+                        <div>$2,711,280</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>24</div>
+                        <div>2.01 m</div>
+                        <div>105 kg</div>
+                        <div>Indiana</div>
+                        <div>$16,071,429</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>20</div>
+                        <div>2.01 m</div>
+                        <div>102 kg</div>
+                        <div>Florida State</div>
+                        <div>$7,280,520</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>28</div>
+                        <div>2.08 m</div>
+                        <div>105 kg</div>
+                        <div>UNLV</div>
+                        <div>$6,350,000</div>
+                    </div>
+                    <div>
+                        <div>G</div>
+                        <div>21</div>
+                        <div>2.03 m</div>
+                        <div>81 kg</div>
+                        <div>--</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>28</div>
+                        <div>2.06 m</div>
+                        <div>90 kg</div>
+                        <div>New Mexico</div>
+                        <div>$7,020,000</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>35</div>
+                        <div>1.92 m</div>
+                        <div>86 kg</div>
+                        <div>--</div>
+                        <div>$19,440,000</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>23</div>
+                        <div>1.85 m</div>
+                        <div>79 kg</div>
+                        <div>San Diego</div>
+                        <div>$2,048,040</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>27</div>
+                        <div>2.06 m</div>
+                        <div>104 kg</div>
+                        <div>New Mexico</div>
+                        <div>$33,003,936</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>22</div>
+                        <div>1.96 m</div>
+                        <div>94 kg</div>
+                        <div>Duke</div>
+                        <div>$16,000,000</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>27</div>
+                        <div>1.85 m</div>
+                        <div>89 kg</div>
+                        <div>Wichita State</div>
+                        <div>$19,675,926</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>26</div>
+                        <div>2.06 m</div>
+                        <div>97 kg</div>
+                        <div>George Wash..</div>
+                        <div>$1,762,796</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>24</div>
+                        <div>2.01 m</div>
+                        <div>92 kg</div>
+                        <div>Kansas</div>
+                        <div>--</div>
+                    </div>
+                    <div>
+              
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sixers-roster1">
+            <div id="sixers-roster-close">&times;</div>
+            <div id="roster-content">
+                <div class="nba-name">
+                    <div class="nba-team">Philadelphia Sixers</div>
+                    <div>Seth Curry</div>
+                    <div>Andre Drummond</div>
+                    <div>Joel Embiid</div>
+                    <div>Danny Green</div>
+                    <div>Tobias Harris</div>
+                    <div>Furkan Korkmaz</div>
+                    <div>Tyrese Maxey</div>
+                    <div>Shake Milton</div>
+                    <div>Georges Niang</div>
+                    <div>Mike Scott</div>
+                    <div>Ben Simmons</div>
+                    <div>Gary Clark</div>
+                    <div>Matisse Thybulle</div>
+                </div>
+                <div class="nba-stat">
+                    <div>
+                        <div>POS</div>
+                        <div>AGE</div>
+                        <div>HT</div>
+                        <div>WT</div>
+                        <div>COLLEGE</div>
+                        <div>SALARY</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>31</div>
+                        <div>1.88 m</div>
+                        <div>83 kg</div>
+                        <div>Duke</div>
+                        <div>$8,207,518</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>28</div>
+                        <div>2.08 m</div>
+                        <div>126 kg</div>
+                        <div>Connecticut</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>27</div>
+                        <div>2.13 m</div>
+                        <div>127 kg</div>
+                        <div>Kansas</div>
+                        <div>$31,579,390</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>34</div>
+                        <div>1.98 m</div>
+                        <div>97 kg</div>
+                        <div>North Carolina</div>
+                        <div>$10,000,000</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>29</div>
+                        <div>2.03 m</div>
+                        <div>102 kg</div>
+                        <div>Tennessee</div>
+                        <div>$35,995,950</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>24</div>
+                        <div>2.01 m</div>
+                        <div>91 kg</div>
+                        <div>--</div>
+                        <div>$4,629,630</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>20</div>
+                        <div>1.88 m</div>
+                        <div>90 kg</div>
+                        <div>Kentucky</div>
+                        <div>$2,602,920</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>24</div>
+                        <div>1.96 m</div>
+                        <div>92 kg</div>
+                        <div>SMU</div>
+                        <div>$1,846,738</div>
+                    </div>
+                    <div>
+                        <div>F</div>
+                        <div>28</div>
+                        <div>2.01 m</div>
+                        <div>104 kg</div>
+                        <div>Lowa State</div>
+                        <div>$3,300,000</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>33</div>
+                        <div>2.01 m</div>
+                        <div>107 kg</div>
+                        <div>Virginia</div>
+                        <div>--</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>25</div>
+                        <div>2.11 m</div>
+                        <div>108 kg</div>
+                        <div>LSU</div>
+                        <div>$33,003,936</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>26</div>
+                        <div>1.96 m</div>
+                        <div>102 kg</div>
+                        <div>Cincinnati</div>
+                        <div>--</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>24</div>
+                        <div>1.96 m</div>
+                        <div>91 kg</div>
+                        <div>Washington</div>
+                        <div>$2,840,160</div>
+                    </div>
+                    <div>
+              
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="warriors-roster1">
+            <div id="warriors-roster-close">&times;</div>
+            <div id="roster-content">
+                <div class="nba-name">
+                    <div class="nba-team">Golden State Warriors</div>
+                    <div>Nemanja Bjelica</div>
+                    <div>Stephen Curry</div>
+                    <div>Draymond Green</div>
+                    <div>Andre Iguodala</div>
+                    <div>Jonathan Kuminga</div>
+                    <div>Damion Lee</div>
+                    <div>Kevon Looney</div>
+                    <div>Moses Moody</div>
+                    <div>Jordan Poole</div>
+                    <div>Otto Porter Jr.</div>
+                    <div>Klay Thompson</div>
+                    <div>Andrew Wiggins</div>
+                    <div>James Wiseman</div>
+                </div>
+                <div class="nba-stat">
+                    <div>
+                        <div>POS</div>
+                        <div>AGE</div>
+                        <div>HT</div>
+                        <div>WT</div>
+                        <div>COLLEGE</div>
+                        <div>SALARY</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>33</div>
+                        <div>2.08 m</div>
+                        <div>106 kg</div>
+                        <div>--</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>33</div>
+                        <div>1.91 m</div>
+                        <div>83 kg</div>
+                        <div>Davidson</div>
+                        <div>$45,780,966</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>31</div>
+                        <div>1.98 m</div>
+                        <div>104 kg</div>
+                        <div>Michigan State</div>
+                        <div>$24,026,712</div>
+                    </div>
+                    <div>
+                        <div>F</div>
+                        <div>37</div>
+                        <div>1.98 m</div>
+                        <div>97 kg</div>
+                        <div>Arizona</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>18</div>
+                        <div>2.01 m</div>
+                        <div>102 kg</div>
+                        <div>--</div>
+                        <div>$5,466,360</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>28</div>
+                        <div>1.96 m</div>
+                        <div>95 kg</div>
+                        <div>Drexel</div>
+                        <div>$1,910,860</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>25</div>
+                        <div>2.06 m</div>
+                        <div>100 kg</div>
+                        <div>UCLA</div>
+                        <div>$5,178,572</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>19</div>
+                        <div>1.96 m</div>
+                        <div>95 kg</div>
+                        <div>Arkansas</div>
+                        <div>$3,562,200</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>22</div>
+                        <div>1.93 m</div>
+                        <div>87 kg</div>
+                        <div>Michigan</div>
+                        <div>$5,178,572</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>28</div>
+                        <div>2.03 m</div>
+                        <div>89 kg</div>
+                        <div>Georgetown</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>31</div>
+                        <div>1.98 m</div>
+                        <div>97 kg</div>
+                        <div>Washington State</div>
+                        <div>$37,980,720</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>26</div>
+                        <div>2.01 m</div>
+                        <div>89 kg</div>
+                        <div>Kansas</div>
+                        <div>$31,579,390</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>20</div>
+                        <div>2.13 m</div>
+                        <div>108 kg</div>
+                        <div>Memphis</div>
+                        <div>$9,166,800</div>
+                    </div>
+                    <div>
+              
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="lakers-roster1">
+            <div id="lakers-roster-close">&times;</div>
+            <div id="roster-content">
+                <div class="nba-name">
+                    <div class="nba-team">Los Angeles Lakers</div>
+                    <div>Carmelo Anthony</div>
+                    <div>Trevor Ariza</div>
+                    <div>Kent Bazemore</div>
+                    <div>Anthony Davis</div>
+                    <div>Wayne Ellington</div>
+                    <div>Talen Horton-Tucker</div>
+                    <div>Dwight Howard</div>
+                    <div>LeBron James</div>
+                    <div>DeAndre Jordan</div>
+                    <div>Malik Monk</div>
+                    <div>Kendrick Nunn</div>
+                    <div>Rajon Rondo</div>
+                    <div>Russell Westbrook</div>
+                </div>
+                <div class="nba-stat">
+                    <div>
+                        <div>POS</div>
+                        <div>AGE</div>
+                        <div>HT</div>
+                        <div>WT</div>
+                        <div>COLLEGE</div>
+                        <div>SALARY</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>37</div>
+                        <div>2.01 m</div>
+                        <div>107 kg</div>
+                        <div>Syracuse</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>36</div>
+                        <div>2.03 m</div>
+                        <div>97 kg</div>
+                        <div>UCLA</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>32</div>
+                        <div>1.93 m</div>
+                        <div>88 kg</div>
+                        <div>Old Dominion</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>28</div>
+                        <div>2.08 m</div>
+                        <div>114 kg</div>
+                        <div>Kentucky</div>
+                        <div>$35,361,360</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>33</div>
+                        <div>1.93 m</div>
+                        <div>93 kg</div>
+                        <div>North Carolina</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>20</div>
+                        <div>1.93 m</div>
+                        <div>106 kg</div>
+                        <div>Lowa State</div>
+                        <div>$9,500,000</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>35</div>
+                        <div>2.08 m</div>
+                        <div>120 kg</div>
+                        <div>--</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>36</div>
+                        <div>2.06 m</div>
+                        <div>113 kg</div>
+                        <div>--</div>
+                        <div>$41,180,544</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>33</div>
+                        <div>2.11 m</div>
+                        <div>120 kg</div>
+                        <div>Texas A&M</div>
+                        <div>$9,881,598</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>23</div>
+                        <div>1.91 m</div>
+                        <div>90 kg</div>
+                        <div>Kentucky</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>G</div>
+                        <div>26</div>
+                        <div>1.88 m</div>
+                        <div>86 kg</div>
+                        <div>Illinois</div>
+                        <div>$5,000,000</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>35</div>
+                        <div>1.85 m</div>
+                        <div>81 kg</div>
+                        <div>Kentucky</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>32</div>
+                        <div>1.91 m</div>
+                        <div>90 kg</div>
+                        <div>UCLA</div>
+                        <div>$44,211,146</div>
+                    </div>
+                    <div>
+              
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="clippers-roster1">
+            <div id="clippers-roster-close">&times;</div>
+            <div id="roster-content">
+                <div class="nba-name">
+                    <div class="nba-team">Los Angeles Clippers</div>
+                    <div>Nicolas Batum</div>
+                    <div>Eric Bledsoe</div>
+                    <div>DeMarcus Cousins</div>
+                    <div>Paul George</div>
+                    <div>Serge Ibaka</div>
+                    <div>Reggie Jackson</div>
+                    <div>Luke Kennard</div>
+                    <div>Kawhi Leonard</div>
+                    <div>Terance Mann</div>
+                    <div>Marcus Morris Sr</div>
+                    <div>Justise Winslow</div>
+                    <div>Ivica Zubac</div>
+                    <div>Brandon Boston Jr</div>
+                </div>
+                <div class="nba-stat">
+                    <div>
+                        <div>POS</div>
+                        <div>AGE</div>
+                        <div>HT</div>
+                        <div>WT</div>
+                        <div>COLLEGE</div>
+                        <div>SALARY</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>32</div>
+                        <div>2.03 m</div>
+                        <div>104 kg</div>
+                        <div>--</div>
+                        <div>$3,170,029</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>31</div>
+                        <div>1.85 m</div>
+                        <div>97 kg</div>
+                        <div>Kentucky</div>
+                        <div>$18,125,000</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>31</div>
+                        <div>2.08 m</div>
+                        <div>122 kg</div>
+                        <div>Kentucky</div>
+                        <div>--</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>31</div>
+                        <div>2.03 m</div>
+                        <div>99 kg</div>
+                        <div>Fresno State</div>
+                        <div>$39,344,900</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>32</div>
+                        <div>2.08 m</div>
+                        <div>106 kg</div>
+                        <div>--</div>
+                        <div>$9,720,900</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>31</div>
+                        <div>1.88 m</div>
+                        <div>94 kg</div>
+                        <div>Boston College</div>
+                        <div>$10,384,500</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>25</div>
+                        <div>1.96 m</div>
+                        <div>93 kg</div>
+                        <div>Duke</div>
+                        <div>$13,347,727</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>30</div>
+                        <div>2.01 m</div>
+                        <div>102 kg</div>
+                        <div>San Diego State</div>
+                        <div>$36,016,200</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>24</div>
+                        <div>1.96 m</div>
+                        <div>97 kg</div>
+                        <div>Florida State</div>
+                        <div>$1,782,621</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>32</div>
+                        <div>2.03 m</div>
+                        <div>98 kg</div>
+                        <div>Kansas</div>
+                        <div>$15,627,907</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>25</div>
+                        <div>1.98 m</div>
+                        <div>100 kg</div>
+                        <div>Duke</div>
+                        <div>$3,902,439</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>24</div>
+                        <div>2.13 m</div>
+                        <div>108 kg</div>
+                        <div>--</div>
+                        <div>$7,518,518</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>19</div>
+                        <div>1.98 m</div>
+                        <div>85 kg</div>
+                        <div>Kentucky</div>
+                        <div>$925,258</div>
+                    </div>
+                    <div>
+              
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="suns-roster1">
+            <div id="suns-roster-close">&times;</div>
+            <div id="roster-content">
+                <div class="nba-name">
+                    <div class="nba-team">Phoenix Suns</div>
+                    <div>Deandre Ayton</div>
+                    <div>Devin Booker</div>
+                    <div>Mikal Bridges</div>
+                    <div>Jae Crowder</div>
+                    <div>Cameron Johnson</div>
+                    <div>Frank Kaminsky</div>
+                    <div>JaVale McGee</div>
+                    <div>Chris Paul</div>
+                    <div>Cameron Payne</div>
+                    <div>Elfrid Payton</div>
+                    <div>Dario Saric</div>
+                    <div>Landry Shamet</div>
+                    <div>Chandler Hutchison</div>
+                </div>
+                <div class="nba-stat">
+                    <div>
+                        <div>POS</div>
+                        <div>AGE</div>
+                        <div>HT</div>
+                        <div>WT</div>
+                        <div>COLLEGE</div>
+                        <div>SALARY</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>23</div>
+                        <div>2.11 m</div>
+                        <div>113 kg</div>
+                        <div>Arizona</div>
+                        <div>$12,632,950</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>24</div>
+                        <div>1.98 m</div>
+                        <div>93 kg</div>
+                        <div>Kentucky</div>
+                        <div>$31,650,600</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>25</div>
+                        <div>1.98 m</div>
+                        <div>94 kg</div>
+                        <div>Villanova</div>
+                        <div>$5,557,725</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>31</div>
+                        <div>1.98 m</div>
+                        <div>108 kg</div>
+                        <div>Marquette</div>
+                        <div>$9,720,900</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>25</div>
+                        <div>2.03 m</div>
+                        <div>95 kg</div>
+                        <div>North Carolina</div>
+                        <div>$4,437,000</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>28</div>
+                        <div>2.13 m</div>
+                        <div>108 kg</div>
+                        <div>Wisconsin</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>33</div>
+                        <div>2.13 m</div>
+                        <div>122 kg</div>
+                        <div>Nevada</div>
+                        <div>$5,000,000</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>36</div>
+                        <div>1.83 m</div>
+                        <div>79 kg</div>
+                        <div>Wake Forest</div>
+                        <div>$30,000,000</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>27</div>
+                        <div>1.85 m</div>
+                        <div>83 kg</div>
+                        <div>Murray State</div>
+                        <div>$6,500,000</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>27</div>
+                        <div>1.91 m</div>
+                        <div>88 kg</div>
+                        <div>Louisiana-Lafayette</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>27</div>
+                        <div>2.08 m</div>
+                        <div>102 kg</div>
+                        <div>--</div>
+                        <div>$8,510,000</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>24</div>
+                        <div>1.93 m</div>
+                        <div>86 kg</div>
+                        <div>Wichita State</div>
+                        <div>$3,768,342</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>25</div>
+                        <div>1.98 m</div>
+                        <div>95 kg</div>
+                        <div>Boise State</div>
+                        <div>$4,019,459</div>
+                    </div>
+                    <div>
+              
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="kings-roster1">
+            <div id="kings-roster-close">&times;</div>
+            <div id="roster-content">
+                <div class="nba-name">
+                    <div class="nba-team">Sacramento Kings</div>
+                    <div>Marvin Bagley III</div>
+                    <div>Harrison Barnes</div>
+                    <div>Terence Davis</div>
+                    <div>De'Aaron Fox</div>
+                    <div>Tyrese Haliburton</div>
+                    <div>Maurice Harkless</div>
+                    <div>Buddy Hield</div>
+                    <div>Richaun Holmes</div>
+                    <div>Damian Jones</div>
+                    <div>Alex Len</div>
+                    <div>Davion Mitchell</div>
+                    <div>Tristan Thompson</div>
+                    <div>Robert Woodard I</div>
+                </div>
+                <div class="nba-stat">
+                    <div>
+                        <div>POS</div>
+                        <div>AGE</div>
+                        <div>HT</div>
+                        <div>WT</div>
+                        <div>COLLEGE</div>
+                        <div>SALARY</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>22</div>
+                        <div>2.11 m</div>
+                        <div>108 kg</div>
+                        <div>Duke</div>
+                        <div>$11,312,114</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>29</div>
+                        <div>2.03 m</div>
+                        <div>102 kg</div>
+                        <div>North Carolina</div>
+                        <div>$20,284,091</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>24</div>
+                        <div>1.93 m</div>
+                        <div>91 kg</div>
+                        <div>Ole Miss</div>
+                        <div>$4,000,000</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>23</div>
+                        <div>1.91 m</div>
+                        <div>83 kg</div>
+                        <div>Kentucky</div>
+                        <div>$28,103,550</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>21</div>
+                        <div>1.96 m</div>
+                        <div>83 kg</div>
+                        <div>Iowa State</div>
+                        <div>$4,023,600</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>28</div>
+                        <div>2.01 m</div>
+                        <div>99 kg</div>
+                        <div>St John's</div>
+                        <div>$4,347,600</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>28</div>
+                        <div>1.93 m</div>
+                        <div>99 kg</div>
+                        <div>Oklahoma</div>
+                        <div>$22,768,890</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>27</div>
+                        <div>2.08 m</div>
+                        <div>106 kg</div>
+                        <div>Bowling Green</div>
+                        <div>$10,384,500</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>26</div>
+                        <div>2.11 m</div>
+                        <div>111 kg</div>
+                        <div>Vanderbilt</div>
+                        <div>$1,977,011</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>28</div>
+                        <div>2.01 m</div>
+                        <div>92 kg</div>
+                        <div>Oregon</div>
+                        <div>--</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>23</div>
+                        <div>1.83 m</div>
+                        <div>91 kg</div>
+                        <div>Baylor</div>
+                        <div>$4,603,320</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>30</div>
+                        <div>2.06 m</div>
+                        <div>115 kg</div>
+                        <div>Texas</div>
+                        <div>$9,720,900</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>22</div>
+                        <div>1.98 m</div>
+                        <div>106 kg</div>
+                        <div>Mississippi State</div>
+                        <div>$1,517,981</div>
+                    </div>
+                    <div>
+              
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bucks-roster1">
+            <div id="bucks-roster-close">&times;</div>
+            <div id="roster-content">
+                <div class="nba-name">
+                    <div class="nba-team">Milwaukee Bucks</div>
+                    <div>Grayson Allen</div>
+                    <div>Giannis Antetokounmpo</div>
+                    <div>Thanasis Antetokounmpo</div>
+                    <div>Elijah Bryant</div>
+                    <div>Pat Connaughton</div>
+                    <div>Donte DiVincenzo</div>
+                    <div>George Hill</div>
+                    <div>Jrue Holiday</div>
+                    <div>Rodney Hood</div>
+                    <div>Brook Lopez</div>
+                    <div>Khris Middleton</div>
+                    <div>Bobby Portis</div>
+                    <div>Jeff Teague</div>
+                </div>
+                <div class="nba-stat">
+                    <div>
+                        <div>POS</div>
+                        <div>AGE</div>
+                        <div>HT</div>
+                        <div>WT</div>
+                        <div>COLLEGE</div>
+                        <div>SALARY</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>25</div>
+                        <div>1.93 m</div>
+                        <div>89 kg</div>
+                        <div>Duke</div>
+                        <div>$4,054,695</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>26</div>
+                        <div>2.11 m</div>
+                        <div>109 kg</div>
+                        <div>--</div>
+                        <div>$39,344,970</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>29</div>
+                        <div>1.98 m</div>
+                        <div>99 kg</div>
+                        <div>--</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>26</div>
+                        <div>1.96 m</div>
+                        <div>95 kg</div>
+                        <div>BYU</div>
+                        <div>$1,517,981</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>28</div>
+                        <div>1.96 m</div>
+                        <div>94 kg</div>
+                        <div>Notre Dame</div>
+                        <div>$5,333,334</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>24</div>
+                        <div>1.93 m</div>
+                        <div>92 kg</div>
+                        <div>Villanova</div>
+                        <div>$4,675,830</div>
+                    </div>
+                    <div>
+                        <div>G</div>
+                        <div>35</div>
+                        <div>1.93 m</div>
+                        <div>85 kg</div>
+                        <div>IUPUI</div>
+                        <div>$4,000,000</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>31</div>
+                        <div>1.91 m</div>
+                        <div>92 kg</div>
+                        <div>UCLA</div>
+                        <div>$32,413,333</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>28</div>
+                        <div>2.03 m</div>
+                        <div>94 kg</div>
+                        <div>Duke</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>33</div>
+                        <div>2.13 m</div>
+                        <div>127 kg</div>
+                        <div>Stanford</div>
+                        <div>$13,302,325</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>30</div>
+                        <div>2.01 m</div>
+                        <div>100 kg</div>
+                        <div>Texas A&M</div>
+                        <div>$35,500,000</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>26</div>
+                        <div>2.08 m</div>
+                        <div>113 kg</div>
+                        <div>Arkansas</div>
+                        <div>--</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>33</div>
+                        <div>1.91 m</div>
+                        <div>88 kg</div>
+                        <div>Wake Forest</div>
+                        <div>--</div>
+                    </div>
+                    <div>
+              
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bulls-roster1">
+            <div id="bulls-roster-close">&times;</div>
+            <div id="roster-content">
+                <div class="nba-name">
+                    <div class="nba-team">Chicago Bulls</div>
+                    <div>Lonzo Ball</div>
+                    <div>Troy Brown Jr</div>
+                    <div>Alex Caruso</div>
+                    <div>DeMar DeRozan</div>
+                    <div>Ayo Dosunmu</div>
+                    <div>Devon Dotson</div>
+                    <div>Javonte Green</div>
+                    <div>Stanley Johnson</div>
+                    <div>Derrick Jones Jr</div>
+                    <div>Zach LaVine</div>
+                    <div>Nikola Vucevic</div>
+                    <div>Coby White</div>
+                    <div>Patrick Williams</div>
+                </div>
+                <div class="nba-stat">
+                    <div>
+                        <div>POS</div>
+                        <div>AGE</div>
+                        <div>HT</div>
+                        <div>WT</div>
+                        <div>COLLEGE</div>
+                        <div>SALARY</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>23</div>
+                        <div>1.98 m</div>
+                        <div>86 kg</div>
+                        <div>UCLA</div>
+                        <div>$18,604,651</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>22</div>
+                        <div>1.98 m</div>
+                        <div>97 kg</div>
+                        <div>Oregon</div>
+                        <div>$5,170,564</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>27</div>
+                        <div>1.93 m</div>
+                        <div>84 kg</div>
+                        <div>Texas A&M</div>
+                        <div>$8,650,651</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>32</div>
+                        <div>1.98 m</div>
+                        <div>99 kg</div>
+                        <div>USC</div>
+                        <div>$26,000,000</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>21</div>
+                        <div>1.96 m</div>
+                        <div>90 kg</div>
+                        <div>Illinois</div>
+                        <div>$925,258</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>22</div>
+                        <div>1.88 m</div>
+                        <div>83 kg</div>
+                        <div>Kansas</div>
+                        <div>--</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>28</div>
+                        <div>1.93 m</div>
+                        <div>92 kg</div>
+                        <div>Radford</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>F</div>
+                        <div>25</div>
+                        <div>1.98 m</div>
+                        <div>109 kg</div>
+                        <div>Arizona</div>
+                        <div>--</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>24</div>
+                        <div>1.96 m</div>
+                        <div>95 kg</div>
+                        <div>UNLV</div>
+                        <div>$9,720,900</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>26</div>
+                        <div>1.96 m</div>
+                        <div>90 kg</div>
+                        <div>UCLA</div>
+                        <div>$19,500,000</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>30</div>
+                        <div>2.11 m</div>
+                        <div>117 kg</div>
+                        <div>USC</div>
+                        <div>$24,000,000</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>21</div>
+                        <div>1.98 m</div>
+                        <div>88 kg</div>
+                        <div>North Carolina</div>
+                        <div>$5,837,760</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>20</div>
+                        <div>2.01 m</div>
+                        <div>97 kg</div>
+                        <div>Florida State</div>
+                        <div>$7,422,000</div>
+                    </div>
+                    <div>
+              
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cavs-roster1">
+            <div id="cavs-roster-close">&times;</div>
+            <div id="roster-content">
+                <div class="nba-name">
+                    <div class="nba-team">Cleveland Cavaliers</div>
+                    <div>Jarrett Allen</div>
+                    <div>Tacko Fall</div>
+                    <div>Darius Garland</div>
+                    <div>Kyle Guy</div>
+                    <div>Mfiondu Kabengele</div>
+                    <div>Kevin Love</div>
+                    <div>Lauri Markkanen</div>
+                    <div>Evan Mobley</div>
+                    <div>Isaac Okoro</div>
+                    <div>Cedi Osman</div>
+                    <div>Ricky Rubio</div>
+                    <div>Collin Sexton</div>
+                    <div>Denzel Valentine</div>
+                </div>
+                <div class="nba-stat">
+                    <div>
+                        <div>POS</div>
+                        <div>AGE</div>
+                        <div>HT</div>
+                        <div>WT</div>
+                        <div>COLLEGE</div>
+                        <div>SALARY</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>23</div>
+                        <div>2.11 m</div>
+                        <div>110 kg</div>
+                        <div>Texas</div>
+                        <div>$20,000,000</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>25</div>
+                        <div>2.26 m</div>
+                        <div>141 kg</div>
+                        <div>UCF</div>
+                        <div>--</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>21</div>
+                        <div>1.85 m</div>
+                        <div>87 kg</div>
+                        <div>Vanderbilt</div>
+                        <div>$7,040,880</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>24</div>
+                        <div>1.85 m</div>
+                        <div>75 kg</div>
+                        <div>Virginia</div>
+                        <div>--</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>24</div>
+                        <div>2.06 m</div>
+                        <div>113 kg</div>
+                        <div>Florida State</div>
+                        <div>$1,701,593</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>33</div>
+                        <div>2.03 m</div>
+                        <div>113 kg</div>
+                        <div>UCLA</div>
+                        <div>$31,258,256</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>24</div>
+                        <div>2.13 m</div>
+                        <div>108 kg</div>
+                        <div>Arizona</div>
+                        <div>$15,690,909</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>20</div>
+                        <div>2.13 m</div>
+                        <div>97 kg</div>
+                        <div>USC</div>
+                        <div>$8,075,160</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>20</div>
+                        <div>1.96 m</div>
+                        <div>103 kg</div>
+                        <div>Auburn</div>
+                        <div>$6,720,720</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>26</div>
+                        <div>2.01 m</div>
+                        <div>104 kg</div>
+                        <div>--</div>
+                        <div>$8,133,334</div>
+                    </div>
+                    <div>
+                        <div>G</div>
+                        <div>30</div>
+                        <div>1.91 m</div>
+                        <div>86 kg</div>
+                        <div>--</div>
+                        <div>$17,800,000</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>22</div>
+                        <div>1.85 m</div>
+                        <div>86 kg</div>
+                        <div>Alabama</div>
+                        <div>$6,439,671</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>27</div>
+                        <div>1.93 m</div>
+                        <div>99 kg</div>
+                        <div>Michigan State</div>
+                        <div>--</div>
+                    </div>
+                    <div>
+              
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pacers-roster1">
+            <div id="pacers-roster-close">&times;</div>
+            <div id="roster-content">
+                <div class="nba-name">
+                    <div class="nba-team">Indiana Pacers</div>
+                    <div>Goga Bitadze</div>
+                    <div>Oshae Brissett</div>
+                    <div>Malcolm Brogdon</div>
+                    <div>Torrey Craig</div>
+                    <div>Chris Duarte</div>
+                    <div>Justin Holiday</div>
+                    <div>Jeremy Lamb</div>
+                    <div>Caris LeVert</div>
+                    <div>T.J. McConnell</div>
+                    <div>Domantas Sabonis</div>
+                    <div>JaKarr Sampson</div>
+                    <div>Myles Turner</div>
+                    <div>T.J. Warren</div>
+                </div>
+                <div class="nba-stat">
+                    <div>
+                        <div>POS</div>
+                        <div>AGE</div>
+                        <div>HT</div>
+                        <div>WT</div>
+                        <div>COLLEGE</div>
+                        <div>SALARY</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>22</div>
+                        <div>2.11 m</div>
+                        <div>113 kg</div>
+                        <div>--</div>
+                        <div>$3,098,400</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>23</div>
+                        <div>2.01 m</div>
+                        <div>95 kg</div>
+                        <div>Syracuse</div>
+                        <div>$1,701,593</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>28</div>
+                        <div>1.96 m</div>
+                        <div>103 kg</div>
+                        <div>Virginia</div>
+                        <div>$21,700,000</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>30</div>
+                        <div>2.01 m</div>
+                        <div>100 kg</div>
+                        <div>USC Upstate</div>
+                        <div>$4,878,049</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>24</div>
+                        <div>1.98 m</div>
+                        <div>86 kg</div>
+                        <div>Oregon</div>
+                        <div>$3,749,400</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>32</div>
+                        <div>1.98 m</div>
+                        <div>81 kg</div>
+                        <div>Washington</div>
+                        <div>$6,006,420</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>29</div>
+                        <div>1.96 m</div>
+                        <div>81 kg</div>
+                        <div>Connecticut</div>
+                        <div>$10,500,000</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>27</div>
+                        <div>1.98 m</div>
+                        <div>92 kg</div>
+                        <div>Michigan</div>
+                        <div>$17,500,000</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>29</div>
+                        <div>1.85 m</div>
+                        <div>88 kg</div>
+                        <div>Arizona</div>
+                        <div>$7,500,000</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>25</div>
+                        <div>2.11 m</div>
+                        <div>108 kg</div>
+                        <div>Gonzaga</div>
+                        <div>$19,800,000</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>28</div>
+                        <div>2.01 m</div>
+                        <div>97 kg</div>
+                        <div>St John's</div>
+                        <div>--</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>25</div>
+                        <div>2.11 m</div>
+                        <div>113 kg</div>
+                        <div>Texas</div>
+                        <div>$18,000,000</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>28</div>
+                        <div>2.03 m</div>
+                        <div>99 kg</div>
+                        <div>North Carolina State</div>
+                        <div>$12,940,000</div>
+                    </div>
+                    <div>
+              
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="piston-roster1">
+            <div id="piston-roster-close">&times;</div>
+            <div id="roster-content">
+                <div class="nba-name">
+                    <div class="nba-team">Detroit Piston</div>
+                    <div>Saddiq Bey</div>
+                    <div>Cade Cunningham</div>
+                    <div>Hamidou Diallo</div>
+                    <div>Luka Garza</div>
+                    <div>Jerami Grant</div>
+                    <div>Killian Hayes</div>
+                    <div>Josh Jackson</div>
+                    <div>Cory Joseph</div>
+                    <div>Trey Lyles</div>
+                    <div>Rodney McGruder</div>
+                    <div>Kelly Olynyk</div>
+                    <div>Chris Smith</div>
+                    <div>saiah Stewart</div>
+                </div>
+                <div class="nba-stat">
+                    <div>
+                        <div>POS</div>
+                        <div>AGE</div>
+                        <div>HT</div>
+                        <div>WT</div>
+                        <div>COLLEGE</div>
+                        <div>SALARY</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>22</div>
+                        <div>6'7</div>
+                        <div>215 lbs</div>
+                        <div>Villanova</div>
+                        <div>$2,824,320</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>20</div>
+                        <div>6'7</div>
+                        <div>220 lbs</div>
+                        <div>Oklahoma State</div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>23</div>
+                        <div>6'5</div>
+                        <div>202 lbs</div>
+                        <div>Kentucky</div>
+                        <div>$5,200,000</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>22</div>
+                        <div>6'10</div>
+                        <div>243 lbs</div>
+                        <div>Iowa</div>
+                        <div>--</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>27</div>
+                        <div>6'8</div>
+                        <div>210 lbs</div>
+                        <div>Syracuse</div>
+                        <div>$20,002,500</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>20</div>
+                        <div>6'5</div>
+                        <div>198 lbs</div>
+                        <div>--</div>
+                        <div>$5,572,680</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>24</div>
+                        <div>6'5</div>
+                        <div>207 lbs</div>
+                        <div>Kansas</div>
+                        <div>$5,005,350</div>
+                    </div>
+                    <div>
+                        <div>PG</div>
+                        <div>30</div>
+                        <div>6'3</div>
+                        <div>200 lbs</div>
+                        <div>Texas</div>
+                        <div>$12,600,000</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>25</div>
+                        <div>6'9</div>
+                        <div>234 lbs</div>
+                        <div>Kentucky</div>
+                        <div>$2,500,000</div>
+                    </div>
+                    <div>
+                        <div>SG</div>
+                        <div>30</div>
+                        <div>6'4</div>
+                        <div>205 lbs</div>
+                        <div>Kansas State</div>
+                        <div>$1,669,178</div>
+                    </div>
+                    <div>
+                        <div>PF</div>
+                        <div>30</div>
+                        <div>6'11</div>
+                        <div>240 lbs</div>
+                        <div>Gonzaga</div>
+                        <div>$12,195,122</div>
+                    </div>
+                    <div>
+                        <div>SF</div>
+                        <div>21</div>
+                        <div>6'9</div>
+                        <div>215 lbs</div>
+                        <div>UCLA</div>
+                        <div>--</div>
+                    </div>
+                    <div>
+                        <div>C</div>
+                        <div>20</div>
+                        <div>6'8</div>
+                        <div>250 lbs</div>
+                        <div>Washington</div>
+                        <div>$3,277,080</div>
+                    </div>
+                    <div>
+              
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="dallas-roster1">
+            <div id="piston-roster-close">&times;</div>
+            <div id="roster-content">
+                <div class="nba-name">
+                    <div class="nba-team">Detroit Piston</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="nba-stat">
+                    <div>
+                        <div>POS</div>
+                        <div>AGE</div>
+                        <div>HT</div>
+                        <div>WT</div>
+                        <div>COLLEGE</div>
+                        <div>SALARY</div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+    <script>
+        bostonClose = document.getElementById('boston-roster-close');
+        newyorkClose = document.getElementById('newyork-roster-close');
+        netsClose = document.getElementById('nets-roster-close');
+        raptorsClose = document.getElementById('raptors-roster-close');
+        sixersClose = document.getElementById('sixers-roster-close');
+        warriorsClose = document.getElementById('warriors-roster-close');
+        lakersClose = document.getElementById('lakers-roster-close');
+        clippersClose = document.getElementById('clippers-roster-close');
+        sunsClose = document.getElementById('suns-roster-close');
+        kingsClose = document.getElementById('kings-roster-close');
+        bucksClose = document.getElementById('bucks-roster-close');
+        bullsClose = document.getElementById('bulls-roster-close');
+        cavsClose = document.getElementById('cavs-roster-close');
+        pacersClose = document.getElementById('pacers-roster-close');
+        pistonClose = document.getElementById('piston-roster-close');
+
+
+
+        //Modal Display function
+        function boston() {
+            document.getElementById('boston-roster1').style.display = 'block';
+        }
+        function newyork() {
+            document.getElementById('newyork-roster1').style.display = 'block';
+        }
+        function nets() {
+            document.getElementById('nets-roster1').style.display = 'block';
+        }
+        function raptors() {
+            document.getElementById('raptors-roster1').style.display = 'block';
+        }
+        function sixers() {
+            document.getElementById('sixers-roster1').style.display = 'block';
+        }
+        function warriors() {
+            document.getElementById('warriors-roster1').style.display = 'block';
+        }
+        function lakers() {
+            document.getElementById('lakers-roster1').style.display = 'block';
+        }
+        function clippers() {
+            document.getElementById('clippers-roster1').style.display = 'block';
+        }
+        function suns() {
+            document.getElementById('suns-roster1').style.display = 'block';
+        }
+        function kings() {
+            document.getElementById('kings-roster1').style.display = 'block';
+        }
+        function bucks() {
+            document.getElementById('bucks-roster1').style.display = 'block';
+        }
+        function bulls() {
+            document.getElementById('bulls-roster1').style.display = 'block';
+        }
+        function cavs() {
+            document.getElementById('cavs-roster1').style.display = 'block';
+        }
+        function pacers() {
+            document.getElementById('pacers-roster1').style.display = 'block';
+        }
+        function piston() {
+            document.getElementById('piston-roster1').style.display = 'block';
+        }
+
+
+
+
+
+
+        //Modal Close function
+        bostonClose.onclick = function() {
+            document.getElementById('boston-roster1').style.display = 'none';
+        }
+        newyorkClose.onclick = function() {
+            document.getElementById('newyork-roster1').style.display = 'none';
+        }
+        netsClose.onclick = function() {
+            document.getElementById('nets-roster1').style.display = 'none';
+        }
+        raptorsClose.onclick = function() {
+            document.getElementById('raptors-roster1').style.display = 'none';
+        }
+        sixersClose.onclick = function() {
+            document.getElementById('sixers-roster1').style.display = 'none';
+        }
+        warriorsClose.onclick = function() {
+            document.getElementById('warriors-roster1').style.display = 'none';
+        }
+        lakersClose.onclick = function() {
+            document.getElementById('lakers-roster1').style.display = 'none';
+        }
+        clippersClose.onclick = function() {
+            document.getElementById('clippers-roster1').style.display = 'none';
+        }
+        sunsClose.onclick = function() {
+            document.getElementById('suns-roster1').style.display = 'none';
+        }
+        kingsClose.onclick = function() {
+            document.getElementById('kings-roster1').style.display = 'none';
+        }
+        bucksClose.onclick = function() {
+            document.getElementById('bucks-roster1').style.display = 'none';
+        }
+        bullsClose.onclick = function() {
+            document.getElementById('bulls-roster1').style.display = 'none';
+        }
+        cavsClose.onclick = function() {
+            document.getElementById('cavs-roster1').style.display = 'none';
+        }
+        pacersClose.onclick = function() {
+            document.getElementById('pacers-roster1').style.display = 'none';
+        }
+        pistonClose.onclick = function() {
+            document.getElementById('piston-roster1').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

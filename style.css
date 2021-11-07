@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'after_shokregular';
+    src: url('./font/After_Shok-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 16px;
+    background: #d9d9d9;
+    overflow: hidden;
+}
+.container {
+    width: 100%;
+    height: 100%;
+}
+.images-frame {
+    width: 819px;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8));
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+}
+@keyframes image-move {
+    0% {right: 0;}
+    12% {right: 819px;}
+    21% {right: 819px;}
+    30% {right: 1638px;}
+    40% {right: 1638px;}
+    50% {right: 2457px;}
+    60% {right: 2457px;}
+    65% {right: 1638px;}
+    73% {right: 1638px;}
+    80% {right: 819px;}
+    90% {right: 0;}
+    100% {right: 0;}
+}
+.images-slide {
+    width: 3276px;
+    height: 100%;
+    margin-right: -2457px;
+    animation-name: image-move;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-delay: 5s;
+}
+.images {
+    float: left;
+    width: 819px;
+    height: 100%;
+    background: #222;
+    z-index: 2;
+}
+@keyframes colorchange {
+    from {color: #fff;}
+    to {color: #000;}
+}
+.images div {
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    top: 50%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+    font-family: 'after_shokregular';
+    color: #fff;
+    text-shadow: -1px 0 rgb(0,0,0), 0 1px rgb(0,0,0), 1px 0 rgb(0,0,0), 0 -1px rgb(0,0,0);
+    font-size: 6.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: colorchange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.images img {
+    width: 100%;
+    height: 100%;
+}
+.main {
+    background: #222 url("./landing-page-image/shooter2.png") no-repeat;
+    background-position: left 150px bottom 90px;
+}
+.main, .main-back, .main-back2 {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: -20%;
+    top: 0;
+    z-index: 3;
+    transform: rotate(-8deg) scale(2, 1.6);
+}
+.main-back {
+    left: -17%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+}
+.main-back2 {
+    left: 3%;
+    background: rgba(0, 0, 0, .2);
+    z-index: 2;
+}
+
+.content {
+    width: 45%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+.content > div {
+    width: 100%;
+}
+.content > div:first-child {
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content > div:first-child h1 {
+    font-size: 4rem;
+    color: rgb(199, 73, 58);
+    text-shadow: 6px 6px 0px rgba(255,255,255,0.1);
+    font-family: 'Rubik Mono One', sans-serif;
+}
+.content > div:last-child {
+    height: 60%;
+    color: #fff;
+    font-size: .9rem;
+    text-align: justify;
+    padding: 0 .2em;
+    font-family: 'Poppins', sans-serif;
+}
+.content > div:last-child > span {
+    color: rgb(199, 73, 58);
+    font-weight: 600;
+}
+.content2 {
+    width: 47%;
+    height: 14%;
+    background: rgba(0, 0, 0, .2);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 9;
+}
+.content2::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    height: 0;
+    left: 30%;
+    margin-left: -5px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent transparent rgba(0, 0, 0, .3) transparent;
+}
+a {
+    padding: .3rem 1.5rem;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 65%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background: rgb(199, 53, 38);
+    border-radius: 10px;
+    box-shadow: 0 6px 0 rgba(255,255,255,.5);
+    border: 1px solid rgba(255,255,255,.5);
+    cursor: pointer;
+    z-index: 11;
+}
+a:active {
+    box-shadow: 0 3px 0 rgba(255,255,255,.5);
+    background: rgb(199, 43, 28);
+    top: 65.5%;
+}
+
+
+
+
+
+
+@media (max-width: 360px) {
+    .main {
+        left: -30%;
+    }
+    .content {
+        top: 45%;
+        left: 50%;
+        width: 95%;
+    }
+    .content > div:first-child > h1 {
+        font-size: 3rem;
+    }
+    .content > div:first-child > h1 span {
+        display: block;
+        left: 7%;
+    }
+    .content  > div:last-child {
+        padding-top: 8%;
+        line-height: 30px;
+    }
+    .content2 {
+        width: 97%;
+        height: 30%;
+        top: 56%;
+        left: 50%;
+    }
+    .content2::after {
+        left: 30%;
+    }
+    a {
+        top: 78%;
+        left: 50%;
+    }
+    a:active {
+        top: 78.5%;
+    }
+    @keyframes image-move {
+        0% {right: 0;}
+        12% {right: 419px;}
+        21% {right: 419px;}
+        30% {right: 1438px;}
+        40% {right: 1438px;}
+        50% {right: 2157px;}
+        60% {right: 2157px;}
+        65% {right: 1438px;}
+        73% {right: 1438px;}
+        80% {right: 419px;}
+        90% {right: 0;}
+        100% {right: 0;}
+    }
+    .images div {
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content:flex-end;
+    }
+    .images div span {
+        writing-mode: vertical-lr;
+    }
+}
