@@ -92,7 +92,7 @@ body {
     height: 100%;
 }
 .main {
-    background: #222 url("./landing-page-image/shooter2.png") no-repeat;
+    background: #222 url("Landing-page-image/shooter2.png") no-repeat;
     background-position: left 150px bottom 90px;
 }
 .main, .main-back, .main-back2 {
