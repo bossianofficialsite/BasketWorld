@@ -148,24 +148,14 @@ body {
     text-align: justify;
     padding: 0 .2em;
     font-family: 'Poppins', sans-serif;
+    background: rgba(0, 0, 0, .2);
+    backdrop-filter: blur(5px);
 }
 .content > div:last-child > span {
     color: rgb(199, 73, 58);
     font-weight: 600;
 }
-.content2 {
-    width: 47%;
-    height: 14%;
-    background: rgba(0, 0, 0, .2);
-    backdrop-filter: blur(5px);
-    position: absolute;
-    top: 50%;
-    left: 27%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    z-index: 9;
-}
-.content2::after {
+.content > div:last-child::after {
     content: "";
     position: absolute;
     bottom: 100%;
@@ -205,7 +195,7 @@ a:active {
 
 
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 600px) {
     .main {
         left: -30%;
     }
@@ -263,5 +253,156 @@ a:active {
     }
     .images div span {
         writing-mode: vertical-lr;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .main {
+        left: -30%;
+    }
+    .content {
+        top: 45%;
+        left: 50%;
+        width: 95%;
+    }
+    .content > div:first-child > h1 {
+        font-size: 3rem;
+    }
+    .content > div:first-child > h1 span {
+        display: block;
+        left: 7%;
+    }
+    .content  > div:last-child {
+        padding-top: 8%;
+        line-height: 30px;
+    }
+    .content2 {
+        width: 97%;
+        height: 30%;
+        top: 56%;
+        left: 50%;
+    }
+    .content2::after {
+        left: 30%;
+    }
+    a {
+        top: 78%;
+        left: 50%;
+    }
+    a:active {
+        top: 78.5%;
+    }
+    @keyframes image-move {
+        0% {right: 0;}
+        12% {right: 419px;}
+        21% {right: 419px;}
+        30% {right: 1438px;}
+        40% {right: 1438px;}
+        50% {right: 2157px;}
+        60% {right: 2157px;}
+        65% {right: 1438px;}
+        73% {right: 1438px;}
+        80% {right: 419px;}
+        90% {right: 0;}
+        100% {right: 0;}
+    }
+    .images div {
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content:flex-end;
+    }
+    .images div span {
+        writing-mode: vertical-lr;
+    }
+}
+@media only screen and (min-width: 768px){
+    .content > div:first-child {
+        width: 50%;
+    }
+    .content > div:last-child {
+        width: 45%;
+        height: 50%;
+    }
+    .content > div:last-child::after {
+        left: 45%;
+    }
+    .content  > div:last-child {
+        padding-top: 3%;
+    }
+    [href="../home.html"] {
+        left: 25%;
+    }
+    .images div {
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+    .images div span {
+        writing-mode: horizontal-tb;
+    }
+    @keyframes image-move {
+        0% {right: 0;}
+        12% {right: 619px;}
+        21% {right: 619px;}
+        30% {right: 1638px;}
+        40% {right: 1638px;}
+        50% {right: 2357px;}
+        60% {right: 2357px;}
+        65% {right: 1638px;}
+        73% {right: 1638px;}
+        80% {right: 439px;}
+        90% {right: 0;}
+        100% {right: 0;}
+    }
+    .images > div {
+        left: 65%;
+    }
+}
+@media only screen and (min-width: 992px){
+    .content > div:first-child {
+        width: 45%;
+    }
+    .content > div:last-child {
+        top: 5%;
+        width: 43%;
+        height: 50%;
+        padding: .5em;
+    }
+    .content > div:last-child::after {
+        left: 45%;
+    }
+    .content  > div:last-child {
+        padding-top: 3%;
+    }
+    [href="../home.html"] {
+        left: 25%;
+    }
+    .images div {
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+    .images div span {
+        writing-mode: horizontal-tb;
+    }
+    @keyframes image-move {
+        0% {right: 0;}
+        12% {right: 819px;}
+        21% {right: 819px;}
+        30% {right: 1638px;}
+        40% {right: 1638px;}
+        50% {right: 2457px;}
+        60% {right: 2457px;}
+        65% {right: 1638px;}
+        73% {right: 1638px;}
+        80% {right: 819px;}
+        90% {right: 0;}
+        100% {right: 0;}
+    }
+    .images > div {
+        left: 62%;
     }
 }
