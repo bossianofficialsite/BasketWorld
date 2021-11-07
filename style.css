@@ -233,16 +233,6 @@ a:active {
     }
     @keyframes image-move {
         0% {right: 0;}
-        12% {right: 419px;}
-        21% {right: 419px;}
-        30% {right: 1438px;}
-        40% {right: 1438px;}
-        50% {right: 2157px;}
-        60% {right: 2157px;}
-        65% {right: 1438px;}
-        73% {right: 1438px;}
-        80% {right: 419px;}
-        90% {right: 0;}
         100% {right: 0;}
     }
     .images div {
