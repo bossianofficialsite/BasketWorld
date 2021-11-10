@@ -166,7 +166,7 @@
                     <div class="nba-logo">
                         <img src="nba-image/dallas.png">
                     </div>
-                    <a href="#">Dallas Mavericks</a>
+                    <a onclick="dallas()" href="#">Dallas Mavericks</a>
                 </div>
                 <div>
                     <div class="nba-logo">
@@ -262,7 +262,7 @@
         </div>
         <br>
         <div id="boston-roster1">
-            <div id="boston-roster-close">&times;</div>
+            <div onclick="Rclose()">&times;</div>
             <div id="roster-content">
                 <div class="nba-name">
                     <div class="nba-team">Boston Celtics</div>
@@ -400,7 +400,7 @@
             </div>
         </div>
         <div id="newyork-roster1">
-                <div id="newyork-roster-close">&times;</div>
+                <div onclick="Rclose()">&times;</div>
                 <div id="roster-content">
                     <div class="nba-name">
                         <div class="nba-team">New York Knicks</div>
@@ -538,7 +538,7 @@
                 </div>
         </div>
         <div id="nets-roster1">
-            <div id="nets-roster-close">&times;</div>
+            <div onclick="Rclose()">&times;</div>
             <div id="roster-content">
                 <div class="nba-name">
                     <div class="nba-team">Brooklyn Nets</div>
@@ -676,7 +676,7 @@
             </div>
         </div>
         <div id="raptors-roster1">
-            <div id="raptors-roster-close">&times;</div>
+            <div onclick="Rclose()">&times;</div>
             <div id="roster-content">
                 <div class="nba-name">
                     <div class="nba-team">Toronto Raptors</div>
@@ -814,7 +814,7 @@
             </div>
         </div>
         <div id="sixers-roster1">
-            <div id="sixers-roster-close">&times;</div>
+            <div onclick="Rclose()">&times;</div>
             <div id="roster-content">
                 <div class="nba-name">
                     <div class="nba-team">Philadelphia Sixers</div>
@@ -952,7 +952,7 @@
             </div>
         </div>
         <div id="warriors-roster1">
-            <div id="warriors-roster-close">&times;</div>
+            <div onclick="Rclose()">&times;</div>
             <div id="roster-content">
                 <div class="nba-name">
                     <div class="nba-team">Golden State Warriors</div>
@@ -1090,7 +1090,7 @@
             </div>
         </div>
         <div id="lakers-roster1">
-            <div id="lakers-roster-close">&times;</div>
+            <div onclick="Rclose()">&times;</div>
             <div id="roster-content">
                 <div class="nba-name">
                     <div class="nba-team">Los Angeles Lakers</div>
@@ -1228,7 +1228,7 @@
             </div>
         </div>
         <div id="clippers-roster1">
-            <div id="clippers-roster-close">&times;</div>
+            <div onclick="Rclose()">&times;</div>
             <div id="roster-content">
                 <div class="nba-name">
                     <div class="nba-team">Los Angeles Clippers</div>
@@ -1366,7 +1366,7 @@
             </div>
         </div>
         <div id="suns-roster1">
-            <div id="suns-roster-close">&times;</div>
+            <div onclick="Rclose()">&times;</div>
             <div id="roster-content">
                 <div class="nba-name">
                     <div class="nba-team">Phoenix Suns</div>
@@ -1504,7 +1504,7 @@
             </div>
         </div>
         <div id="kings-roster1">
-            <div id="kings-roster-close">&times;</div>
+            <div onclick="Rclose()">&times;</div>
             <div id="roster-content">
                 <div class="nba-name">
                     <div class="nba-team">Sacramento Kings</div>
@@ -1642,7 +1642,7 @@
             </div>
         </div>
         <div id="bucks-roster1">
-            <div id="bucks-roster-close">&times;</div>
+            <div onclick="Rclose()">&times;</div>
             <div id="roster-content">
                 <div class="nba-name">
                     <div class="nba-team">Milwaukee Bucks</div>
@@ -1780,7 +1780,7 @@
             </div>
         </div>
         <div id="bulls-roster1">
-            <div id="bulls-roster-close">&times;</div>
+            <div onclick="Rclose()">&times;</div>
             <div id="roster-content">
                 <div class="nba-name">
                     <div class="nba-team">Chicago Bulls</div>
@@ -1918,7 +1918,7 @@
             </div>
         </div>
         <div id="cavs-roster1">
-            <div id="cavs-roster-close">&times;</div>
+            <div onclick="Rclose()">&times;</div>
             <div id="roster-content">
                 <div class="nba-name">
                     <div class="nba-team">Cleveland Cavaliers</div>
@@ -2056,7 +2056,7 @@
             </div>
         </div>
         <div id="pacers-roster1">
-            <div id="pacers-roster-close">&times;</div>
+            <div onclick="Rclose()">&times;</div>
             <div id="roster-content">
                 <div class="nba-name">
                     <div class="nba-team">Indiana Pacers</div>
@@ -2194,7 +2194,7 @@
             </div>
         </div>
         <div id="piston-roster1">
-            <div id="piston-roster-close">&times;</div>
+            <div onclick="Rclose()">&times;</div>
             <div id="roster-content">
                 <div class="nba-name">
                     <div class="nba-team">Detroit Piston</div>
@@ -2332,7 +2332,7 @@
             </div>
         </div>
         <div id="dallas-roster1">
-            <div id="piston-roster-close">&times;</div>
+            <div onclick="Rclose()">&times;</div>
             <div id="roster-content">
                 <div class="nba-name">
                     <div class="nba-team">Detroit Piston</div>
@@ -2472,24 +2472,6 @@
     </section>
     <script src="main.js"></script>
     <script>
-        bostonClose = document.getElementById('boston-roster-close');
-        newyorkClose = document.getElementById('newyork-roster-close');
-        netsClose = document.getElementById('nets-roster-close');
-        raptorsClose = document.getElementById('raptors-roster-close');
-        sixersClose = document.getElementById('sixers-roster-close');
-        warriorsClose = document.getElementById('warriors-roster-close');
-        lakersClose = document.getElementById('lakers-roster-close');
-        clippersClose = document.getElementById('clippers-roster-close');
-        sunsClose = document.getElementById('suns-roster-close');
-        kingsClose = document.getElementById('kings-roster-close');
-        bucksClose = document.getElementById('bucks-roster-close');
-        bullsClose = document.getElementById('bulls-roster-close');
-        cavsClose = document.getElementById('cavs-roster-close');
-        pacersClose = document.getElementById('pacers-roster-close');
-        pistonClose = document.getElementById('piston-roster-close');
-
-
-
         //Modal Display function
         function boston() {
             document.getElementById('boston-roster1').style.display = 'block';
@@ -2536,58 +2518,31 @@
         function piston() {
             document.getElementById('piston-roster1').style.display = 'block';
         }
-
-
-
-
+        function dallas() {
+            document.getElementById('dallas-roster1').style.display = 'block';
+        }
 
 
         //Modal Close function
-        bostonClose.onclick = function() {
+        function Rclose() {
             document.getElementById('boston-roster1').style.display = 'none';
-        }
-        newyorkClose.onclick = function() {
             document.getElementById('newyork-roster1').style.display = 'none';
-        }
-        netsClose.onclick = function() {
             document.getElementById('nets-roster1').style.display = 'none';
-        }
-        raptorsClose.onclick = function() {
             document.getElementById('raptors-roster1').style.display = 'none';
-        }
-        sixersClose.onclick = function() {
             document.getElementById('sixers-roster1').style.display = 'none';
-        }
-        warriorsClose.onclick = function() {
             document.getElementById('warriors-roster1').style.display = 'none';
-        }
-        lakersClose.onclick = function() {
             document.getElementById('lakers-roster1').style.display = 'none';
-        }
-        clippersClose.onclick = function() {
             document.getElementById('clippers-roster1').style.display = 'none';
-        }
-        sunsClose.onclick = function() {
             document.getElementById('suns-roster1').style.display = 'none';
-        }
-        kingsClose.onclick = function() {
             document.getElementById('kings-roster1').style.display = 'none';
-        }
-        bucksClose.onclick = function() {
             document.getElementById('bucks-roster1').style.display = 'none';
-        }
-        bullsClose.onclick = function() {
             document.getElementById('bulls-roster1').style.display = 'none';
-        }
-        cavsClose.onclick = function() {
             document.getElementById('cavs-roster1').style.display = 'none';
-        }
-        pacersClose.onclick = function() {
             document.getElementById('pacers-roster1').style.display = 'none';
-        }
-        pistonClose.onclick = function() {
             document.getElementById('piston-roster1').style.display = 'none';
-        }
+            document.getElementById('piston-roster1').style.display = 'none';
+            document.getElementById('dallas-roster1').style.display = 'none';
+        }  
     </script>
 </body>
 </html>

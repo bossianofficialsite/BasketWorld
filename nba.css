@@ -89,13 +89,13 @@
     display: none;
     z-index: 100;
 }
-[id*="roster-close"] {
+[onclick="Rclose()"] {
     font-size: 3rem;
     position: absolute;
     right: 3%;
     cursor: pointer;
 }
-[id*="roster-close"]:hover {
+[onclick="Rclose()"]:hover {
     color: rgb(199, 73, 58);
 }
 @keyframes zoom {
@@ -174,7 +174,7 @@
 #pacers-roster1 #roster-content div:first-child .nba-team {
     background: rgb(251, 194, 39)
 }
-#piston-roster1 #roster-content div:first-child .nba-team {
+#roster-content div:first-child .nba-team {
     background: rgb(230, 33, 75);
 }
 #roster-content div:first-child .nba-team ~ div {
