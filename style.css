@@ -320,7 +320,7 @@ a:active {
     .content  > div:last-child {
         padding-top: 3%;
     }
-    [href="../home.html"] {
+    [href="home.html"] {
         left: 25%;
     }
     .images div {
@@ -366,7 +366,7 @@ a:active {
     .content  > div:last-child {
         padding-top: 3%;
     }
-    [href="../home.html"] {
+    [href="home.html"] {
         left: 25%;
     }
     .images div {
