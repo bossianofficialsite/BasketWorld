@@ -1,23 +1,21 @@
 /** Light & Dark Variable **/
 var lightDark = document.getElementById('switch');
 
-var nav = document.getElementById('nav');
-var ball =  document.getElementById('ball2');
-var logo = document.getElementById('BasketWorld');
-var anchor = document.getElementById('anchor');
-var anchor1 = document.getElementById('anchor1');
-var anchor2 = document.getElementById('anchor3');
-var list = document.getElementById('list');
-var list1 = document.getElementById('list1');
-var list2 = document.getElementById('list2');
-var list3 = document.getElementById('list3');
-var navact = document.getElementById('home');
-var content = document.getElementById('main-content');
-
-
-
-
 lightDark.onclick = function() {
+    
+    var nav = document.getElementById('nav');
+    var ball =  document.getElementById('ball2');
+    var logo = document.getElementById('BasketWorld');
+    var anchor = document.getElementById('anchor');
+    var anchor1 = document.getElementById('anchor1');
+    var anchor2 = document.getElementById('anchor3');
+    var list = document.getElementById('list');
+    var list1 = document.getElementById('list1');
+    var list2 = document.getElementById('list2');
+    var list3 = document.getElementById('list3');
+    var navact = document.getElementById('home');
+    var content = document.getElementById('main-content');
+
     lightDark.classList.toggle('active');
     nav.classList.toggle('active');
     ball.classList.toggle('active');
