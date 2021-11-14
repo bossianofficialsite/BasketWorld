@@ -39,7 +39,7 @@
 /* Pba main-content */
 #main-content {
     width: 100%;
-    height: 87%;
+    height: 115%;
     background: rgb(60,60,60);
     display: flex;
     align-items: center;
@@ -47,7 +47,6 @@
 }
 .pba-cont {
     width: 70%;
-    height: 450px;
     display: flex;
 }
 .pba-cont > div {
@@ -70,6 +69,47 @@
     padding-left: 2em;
     color: #fff;
     font: 700 1.2rem 'Poppins', sans-serif;
+}
+.pba-name > div:nth-child(1) ~ div, .pba-standing > div:nth-child(1) ~ div {
+    height: 50px;
+}
+.pba-name > div:nth-child(1) ~ div > div:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    margin-left: 2.5em;
+    border: 1px solid red;
+}
+.pba-name > div:nth-child(1) ~ div > div:nth-child(2) {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 0;
+    top: 25%;
+    left: 18%;
+    word-spacing: 7px;
+    font-family: 'Russo One', sans-serif;
+    color: #fff;
+    text-shadow: -1px 0px rgba(0,0,0,.5), 0 1px rgba(0,0,0,.5), 1px 0 rgba(0,0,0,.5), 0 -1px rgba(0,0,0,.5);
+}
+.pba-standing > div:nth-child(1) ~ div > div {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.pba-standing > div:nth-child(1) ~ div > div:nth-child(1) {
+    top: 0;
+    left: 8%;
+}
+.pba-standing > div:nth-child(1) ~ div > div:nth-child(2) {
+    top: 0;
+    left: 41%;
+}
+.pba-standing > div:nth-child(1) ~ div > div:nth-child(3) {
+    top: 0;
+    left: 74%;
 }
 .pba-standing > div:nth-child(1) {
     display: flex;
