@@ -39,15 +39,13 @@
 /* Pba main-content */
 #main-content {
     width: 100%;
-    height: 115%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 180%;
 }
 .pba-cont {
     width: 70%;
     display: flex;
     background: rgba(0,0,0,.5);
+    margin: auto;
 }
 .pba-name {
     width: 70%;
@@ -69,6 +67,9 @@
 }
 .pba-name > div:nth-child(1) ~ div, .pba-standing > div:nth-child(1) ~ div {
     height: 50px;
+}
+.pba-name > div:nth-child(1) ~ div:hover {
+    background: rgba(0,0,0,.7);
 }
 .pba-name > div:nth-child(1) ~ div > div:nth-child(1) {
     width: 80px;
@@ -125,4 +126,41 @@
     justify-content: center;
     color: #fff;
     font-weight: 700;
+}
+.pba-games {
+    width: 60%;
+    height: 350px;
+    margin: 2em auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas: 
+    "game1 game1"
+    "game2 game3";
+    grid-gap: .5em;
+}
+.pba-games > div {
+    background: #d9d9d9;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+.game1 {
+    grid-area: game1;
+}
+.game2 {
+    grid-area: game2;
+}
+.game3 {
+    grid-area: game3;
+}
+.pba-games > div > div:nth-child(1) {
+    background: rgba(0,0,0,.9);
+    color: #fff;
+    padding: .3em 1.5em;
+    font-size: .7rem;
+}
+.pba-games > div:nth-child(1) > div:nth-child(1) {
+    padding: .3em 0;
+    text-align: center;
+    font-size: 1rem;
 }
