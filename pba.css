@@ -140,9 +140,8 @@
     grid-gap: .5em;
 }
 .pba-games > div {
-    background: #d9d9d9;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, .5), 80%, rgba(0, 0, 0, .5));
     border-radius: 5px;
-    border: 1px solid #000;
 }
 .game1 {
     grid-area: game1;
@@ -159,8 +158,47 @@
     padding: .3em 1.5em;
     font-size: .7rem;
 }
+.pba-games > div > div:nth-child(2) {
+    height: 80%;
+    display: flex;
+}
+.pba-games > div > div:nth-child(2) > div {
+    width: 50%;
+    height: 100%;
+}
 .pba-games > div:nth-child(1) > div:nth-child(1) {
     padding: .3em 0;
     text-align: center;
     font-size: 1rem;
+}
+[class*="-team"] {
+    width: 130px;
+    height: 100px;
+    position: absolute;
+}
+.right-team {
+    top: 5%;
+    left: 20%;
+}
+.left-team {
+    top: 5%;
+    right: 20%;
+}
+.right-team > img, .left-team > img {
+    width: 100%;
+    height: 100%;
+}
+.right-score, .left-score {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 5%;
+    right: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+.left-score {
+    left: 20%;
 }
